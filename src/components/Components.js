@@ -9,7 +9,7 @@ import WizardForm from "./WizardForm";
 const Components = () => {
   return (
     <Container className="pt-5">
-      <Tab.Container id="left-tabs-example" defaultActiveKey={"renderer"}>
+      <Tab.Container id="left-tabs-example" defaultActiveKey={"simple"}>
         <Row>
           <Col sm={2}>
             <Nav variant="pills" className="flex-column">

@@ -1,0 +1,14 @@
+<div>
+    <% console.log({ctx}) %>
+
+    <% if (!ctx.hideActionButtons) { %>
+      <% if (ctx.mode === 'edit') { %>
+        <button ref="saveButton">Save</button>
+        <button ref="cancelButton">Cancel</button>
+      <% } else if (ctx.mode === 'view') { %>
+        <button ref="editButton">Edit</button>
+      <% } %>
+    <% } %>
+    <div ref="dmnContainer" id="{{ctx.id}}" class="dmn-container"></div>
+    
+  </div>
